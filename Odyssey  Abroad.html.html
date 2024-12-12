@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Odyssey  Abroad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        .menu-toggle:checked ~ .menu {
+            display: block;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="bg-black text-white">
+        <div class="container mx-auto flex justify-between items-center py-2 px-4">
+            <div class="flex items-center space-x-4">
+                <!-- <img alt="Study Overseas Help Logo" class="h-10" height="50" src="https://storage.googleapis.com/a1aa/image/4fuHftVrcolePJlVelf06Djdek8JPidSiPlYENaAEzUgUyYeJA.jpg" width="50"/> -->
+                 <h2>Odyssey  Abroad</h2>
+                <div class="hidden md:block">
+                    <span class="mr-4">+91-6294361166</span>
+                    <span>info@OdysseyAbroad.com</span>
+                </div>
+            </div>
+            <div class="flex space-x-4">
+                <a class="text-orange-500" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="text-orange-500" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="text-orange-500" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="text-orange-500" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="text-orange-500" href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- Navigation -->
+    <nav class="bg-black text-white">
+        <div class="container mx-auto flex justify-between items-center py-4 px-4">
+            <div class="relative">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle hidden"/>
+                <label for="menu-toggle" class="cursor-pointer block md:hidden">
+                    <i class="fas fa-bars text-2xl text-orange-500"></i>
+                </label>
+                <div class="menu hidden md:flex flex-col md:flex-row md:space-x-4 absolute md:static bg-black w-full md:w-auto left-0 top-full md:top-auto">
+                    <a class="text-orange-500 hover:text-white py-2 px-4 block" href="#">Home</a>
+                    <a class="hover:text-orange-500 py-2 px-4 block" href="#">About Us</a>
+                    <a class="hover:text-orange-500 py-2 px-4 block" href="#">Exams</a>
+                    <a class="hover:text-orange-500 py-2 px-4 block" href="#">Study Destinations</a>
+                    <a class="hover:text-orange-500 py-2 px-4 block" href="#">Courses</a>
+                    <a class="hover:text-orange-500 py-2 px-4 block" href="#">Scholarships</a>
+                    <a class="hover:text-orange-500 py-2 px-4 block" href="#">Services</a>
+                    <a class="hover:text-orange-500 py-2 px-4 block" href="#">Blog</a>
+                    <a class="hover:text-orange-500 py-2 px-4 block" href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="bg-orange-500 text-white py-20 relative">
+        <div class="container mx-auto flex flex-col md:flex-row items-center px-4">
+            <div class="md:w-1/2">
+                <h1 class="text-5xl font-bold mb-4">DISCOVER THE PERFECT UNIVERSITY FOR YOU</h1>
+                <p class="text-lg mb-8">We make it simple to find, apply &amp; enroll at universities abroad</p>
+                <button class="bg-black text-white py-2 px-4 rounded-full">Speak to us <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img alt="Student holding books and pointing" class="h-96" height="400" src="https://storage.googleapis.com/a1aa/image/WOxF513UewQdQaU9oxNeLgGtKeVQSmOg1PeVcdJN0bVMlMmPB.jpg" width="300"/>
+            </div>
+        </div>
+        <img alt="Background illustration of university buildings" class="absolute inset-0 w-full h-full object-cover opacity-10" height="400" src="https://storage.googleapis.com/a1aa/image/N0oCBa0YjaruF5a79nHTK9kheltBwAlG3est17j0fn2iSGznA.jpg" width="600"/>
+    </section>
+    <!-- Floating Buttons -->
+    <div class="fixed bottom-4 right-4 space-y-2">
+        <a class="bg-green-500 text-white p-3 rounded-full shadow-lg" href="#"><i class="fab fa-whatsapp"></i></a>
+        <a class="bg-black text-white p-3 rounded-full shadow-lg" href="#"><i class="fas fa-phone"></i></a>
+    </div>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('change', function() {
+            const menu = document.querySelector('.menu');
+            if (this.checked) {
+                menu.classList.remove('hidden');
+                menu.classList.add('block');
+            } else {
+                menu.classList.remove('block');
+                menu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
